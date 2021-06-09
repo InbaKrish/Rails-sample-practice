@@ -5,12 +5,71 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css" />
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    
+    <div id="page" align="center">
+		<div id="content" style="width:800px">
+			<div id="logo">
+				<div style="margin-top:70px" class="whitetitle">Rails!</div>
+			</div>
+			<div id="topheader">
+				<div align="left" class="bodytext">
+					<br />
+					<strong>Rails TryOuts</strong><br />
+					Evergreen Terrace 742<br />
+					Kansas Missouri<br />
+					Phone: 432-653-3121<br />
+					sales@thetiecompany.com
+				</div>
+				<div id="toplinks" class="smallgraytext">
+					<a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a>
+				</div>
+			</div>
+			<div id="menu">
+				<div align="right" class="smallwhitetext" style="padding:9px;">
+					<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Products</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a>
+				</div>
+			</div>
+			<div id="submenu">
+				<div align="right" class="smallgraytext" style="padding:9px;">
+					<a href="#">Submenu 1</a> | <a href="#">Submenu 2</a> | <a href="#">Submenu 3</a> | <a href="#">Submenu 4</a> | <a href="#">Submenu 5</a> | <a href="#">Submenu 6</a>
+				</div>
+			</div>
+			<div id="contenttext">
+				<div style="padding:10px">
+					<span class="titletext">Rails TryOuts!!!</span>
+					</div>
+					<div class="bodytext" style="padding:12px;" align="justify">
+					<strong> <h2> Simple Rails app with HTML view template from OSWD  </h2> </strong><br />
+					<br />
+					<%= yield %>
+				</div>
+			</div>
+			<div id="leftpanel">
+				<div align="justify" class="graypanel">
+					<span class="smalltitle">News</span><br /><br />
+					<span class="smallredtext">September 27, 2006</span><br />
+					<span class="bodytext">Curabitur arcu tellus, suscipit in, aliquam eget, ultricies id, sapien. Nam est.</span><br />
+					<a href="#" class="smallgraytext">More...</a><br /><br />
+					<span class="smallredtext">September 27, 2006</span><br />
+					<span class="bodytext">Curabitur arcu tellus, suscipit in, aliquam eget, ultricies id, sapien. Nam est.</span><br />
+					<a href="#" class="smallgraytext">More...</a><br /><br />
+					<span class="smallredtext">September 27, 2006</span><br />
+					<span class="bodytext">Curabitur arcu tellus, suscipit in, aliquam eget, ultricies id, sapien. Nam est.</span><br />
+					<a href="#" class="smallgraytext">More...</a><br /><br />
+				</div>
+			</div>
+			<div id="footer" class="smallgraytext">
+				<a href="#">Home</a> | <a href="/about">About Us</a> | <a href="#">Products</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a>
+				| Your Company Name 
+				&copy; 2007 | <a href="http://www.winkhosting.com" target="_blank">Hosting Colombia</a> 
+			</div>
+		</div>
+	</div>
   </body>
 </html>
